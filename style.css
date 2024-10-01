@@ -1,0 +1,255 @@
+/* General Styles */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e9e8e0;
+}
+
+/* Navigation */
+.nav {
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    padding: 10px 400px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    gap: 230px;
+    background-color: rgba(0, 0, 0, 0.812);
+}
+
+
+
+/* Main Styles */
+main {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.image-card {
+    background-color: rgba(226, 223, 219, 0.664);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+main img {
+    border-radius: 10px;
+}
+
+main h2 {
+    font-family: cursive;
+}
+
+main button {
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+/* Images Container */
+.images {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 50px;
+}
+/* Table Styles */
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px auto; /* Center the table */
+    font-size: 1em; /* Increased font size for readability */
+    font-family: sans-serif;
+    min-width: 600px; /* Adjusted for better layout */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+/* Main Input Styles */
+main input {
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+/* ========== Media Queries ========== */
+
+/* For Tablets and smaller devices */
+@media (max-width: 1024px) {
+    footer {
+        padding: 10px 150px;
+        gap: 100px;
+    }
+
+    .images {
+        flex-wrap: wrap;
+        padding: 0 30px;
+    }
+
+    main button {
+        padding: 8px 30px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+    footer {
+        padding: 10px 50px;
+        gap: 50px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    main img {
+        width: 100%;
+        height: auto;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    main button {
+        padding: 10px 20px;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table, th, td {
+        font-size: 12px;
+    }
+
+    footer img {
+        width: 30px;
+        height: auto;
+    }
+}
+
+/* For very small mobile phones (320px width) */
+/* Footer Styles for Mobile Phones */
+@media (max-width: 768px) {
+    footer {
+        padding: 10px 50px;
+        gap: 50px;
+        justify-content: space-between; /* Ensure even spacing */
+    }
+
+    footer img {
+        width: 30px;
+        height: auto;
+    }
+}
+
+/* Footer Styles for Very Small Mobile Phones */
+@media (max-width: 480px) {
+    footer {
+        padding: 10px;
+        justify-content: space-around; /* Space out icons more evenly */
+    }
+
+    footer img {
+        width: 25px;
+        height: auto;
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 5px;
+    }
+    .styled-table {
+        margin: 10px; /* Reduced margin for smaller screens */
+        font-size: 0.8em; /* Smaller font size for readability */
+    }
+
+    /* Adjust padding for table cells */
+    .styled-table th,
+    .styled-table td {
+        padding: 8px 5px; /* Reduced padding */
+    }
+
+    /* Adjust image size */
+    .styled-table img {
+        width: 60px; /* Smaller image width for mobile */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 3px;
+    }
+
+    /* Position text styling */
+    .styled-table tbody tr td:first-child {
+        font-size: 1em; /* Slightly larger for visibility */
+        font-weight: bold; /* Keep it bold for emphasis */
+    }
+
+    /* Reduce the width of the table for smaller devices */
+    .styled-table {
+        min-width: 100%; /* Ensure it takes full width */
+    }
+}
+
+
+@media (max-width: 600px) {
+   .search {
+    display: flex;
+
+   }
+   .search img {
+    width: 20px;
+   }
+
+   .search input {
+    width: 2200px;
+   }
+
+   main p {
+    text-align: start;
+    padding-left: 10px;
+   }
+}
